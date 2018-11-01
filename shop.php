@@ -2,8 +2,8 @@
 session_start();
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $product = $_POST['product'];
-    $num = $_POST['num'];
+    $product = $_POST[         ];
+    $num = $_POST[        ];
     $_SESSION['cart'][$product] = $num;
 }
 
@@ -23,14 +23,14 @@ var_dump($cart);
     <tr>
         <td>業務用デスク</td>
         <td>
-            <select name="num">
+            <select name=       >
             <?php for($i = 1; $i < 10; $i++):?>
-            <option value="<?php echo $i;?>"><?php echo $i;?></option>
+            <option value="<?php echo      ?>"><?php echo      ?></option>
             <?php endfor; ?>
             </select>
         </td>
         <td>
-            <input type="hidden" name="product" value="desk_01">
+            <input type="hidden" name=           value="desk_01">
             <?php if(isset($cart['desk_01']) === TRUE):?>
             <p>追加済み</p>
             <?php else: ?>
@@ -50,7 +50,7 @@ var_dump($cart);
             </select>
         </td>
         <td>
-            <input type="hidden" name="product" value="chair_07">
+            <input type=         name="product" value="chair_07">
             <?php if(isset($cart['chair_07']) === TRUE): ?>
             <p>追加済み</p>
             <?php else: ?>
