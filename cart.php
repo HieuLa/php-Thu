@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+
 $cart = array();
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $product = $_POST['product'];
@@ -59,7 +59,7 @@ var_dump($_SESSION);
             </select>
     </td>
     <td>
-        <input type="hidden" name="kind" value="change">
+        <input type="hidden" name="kind" value=         >
         <input type="hidden" name="product" value="<?php echo $key?>">
         <input type="submit" value="変更">
     </td>
